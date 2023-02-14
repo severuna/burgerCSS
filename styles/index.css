@@ -29,3 +29,11 @@ body {
     background-color: var(--foreground);
     border-radius: 9999px;
 }
+
+.burger-menu input {
+    appearance: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    pointer-events: none;
+}
