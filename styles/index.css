@@ -8,6 +8,24 @@ body {
 
 :root {
     --bar-width: 60px;
-    --bar-height: 80px;
+    --bar-height: 8px;
     --bar-gap: 6px;
+    --foreground: #333;
+    --background: #fff;
+}
+
+.burger-menu {
+    display: flex;
+    flex-direction: column;
+    gap: var(--bar-gap);
+}
+
+.burger-menu::after,
+.burger-menu::before,
+.burger-menu input {
+    content: '';
+    width: var(--bar-width);
+    height: var(--bar-height);
+    background-color: var(--foreground);
+    border-radius: 9999px;
 }
