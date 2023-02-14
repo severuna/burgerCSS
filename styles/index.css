@@ -5,3 +5,9 @@
 body {
     margin: 0;
 }
+
+:root {
+    --bar-width: 60px;
+    --bar-height: 80px;
+    --bar-gap: 6px;
+}
