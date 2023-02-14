@@ -13,6 +13,7 @@ body {
     --foreground: #333;
     --background: #fff;
     --burger-margin: 8px;
+    --animation-timing: 200ms easy-in-out;
 }
 
 .burger-menu {
@@ -35,6 +36,7 @@ body {
     height: var(--bar-height);
     background-color: var(--foreground);
     border-radius: 9999px;
+    transition: opacity var(--animation-timing), width var(--animation-timing);
 }
 
 .burger-menu input {
@@ -43,4 +45,9 @@ body {
     margin: 0;
     outline: none;
     pointer-events: none;
+}
+
+.burger-menu input:checked {
+    opacity: 0;
+    width: 0;
 }
